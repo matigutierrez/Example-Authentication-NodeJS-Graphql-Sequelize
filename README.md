@@ -1,16 +1,14 @@
 # Example-Authentication-NodeJS-Graphql-Sequelize
 
-## Iniciar Backend
-
-**Descargar dependencias**
+**Download dependencies**
 
 ```
 npm install
 ```
 
-**Configurar Base de Datos**
+**Configure Database**
 
-Configurar los datos de usuario y nombre de la base de datos en el archivo `config/config.js`
+Configure the user data and name of the database in the `config / config.js` file
 
 ```json
 "development": {
@@ -22,13 +20,13 @@ Configurar los datos de usuario y nombre de la base de datos en el archivo `conf
   },
 ```
 
-**Ejecutar las Migraciones**
+**Running the Migrations**
 
 ```
 node_modules/.bin/sequelize db:migrate
 ```
 
-**Iniciar el Servidor**
+**Running the Server**
 
 ```
 npm start
