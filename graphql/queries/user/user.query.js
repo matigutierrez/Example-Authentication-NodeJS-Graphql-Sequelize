@@ -8,11 +8,7 @@ import User from '../../types/user.type';
 export default {
   type: GraphQLList(User),
   args: {},
-  resolve(root, args, { user }) {
-
-    if(!user) {
-      throw new Error('You are not authenticated!');
-    }
+  resolve(root, args) {
     
     return models.User.findAll();
   }
