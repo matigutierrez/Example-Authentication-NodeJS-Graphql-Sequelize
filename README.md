@@ -37,7 +37,7 @@ Open GraphiQL with the route http://localhost:3977/graphql
 
 Create User
 
-```json
+```
   mutation{
     createuser(user: {mail: "hola@gmail.com", 
       password:"12345"}){
@@ -47,7 +47,7 @@ Create User
 ```
 Login User
 
-```json
+```
   mutation{
     login(mail: "hola@gmail.com", 
       password:"12345"){
