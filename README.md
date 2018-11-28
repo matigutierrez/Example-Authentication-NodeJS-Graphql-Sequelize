@@ -31,3 +31,31 @@ node_modules/.bin/sequelize db:migrate
 ```
 npm start
 ```
+Open GraphiQL with the route http://localhost:3977/graphql
+
+**Example**
+
+Create User
+
+```json
+  mutation{
+    createuser(user: {mail: "hola@gmail.com", 
+      password:"12345"}){
+      id
+    }
+  }
+```
+Login User
+
+```json
+  mutation{
+    login(mail: "hola@gmail.com", 
+      password:"12345"){
+      hash
+    }
+  }
+```
+
+**Suggestions**
+
+Update to the latest stable version of NodeJS
